@@ -12,17 +12,18 @@
 <body>
 
     <div id="app">
+        <audio src="./music/audio_2017-05-06_12-54-44.ogg"  class="audio"></audio>
         <div class="player">
             <div class="name-img">
-                <h1 v-text="musicName"></h1>
-                <img src="./images/Screenshot (46).png" class="title" alt="title" width="200" height="200">
+                <h1 >awat</h1>
+                <img id="img" src="./images/Screenshot (46).png" class="title" alt="title" width="200" height="200">
             </div>
             <div class="control">
-                <button id="after" class="btn btn-warning"><i class="bi bi-skip-backward-fill"></i></button>
-                <button id="Front" class="btn btn-warning"><i class="bi bi-skip-start-fill"></i></button>
-                <button id="play-or-stop" class="btn btn-warning"><i class="bi bi-play-fill"></i></button>
-                <button id="Back" class="btn btn-warning"><i class="bi bi-skip-end-fill"></i></button>
-                <button id="before" class="btn btn-warning"><i class="bi bi-skip-forward-fill"></i></button>
+                <button id="after" class="btn btn-warning" onclick="after()"><i class="bi bi-skip-backward-fill"></i></button>
+                <button id="Front" class="btn btn-warning" onclick="Front()"><i class="bi bi-skip-start-fill"></i></button>
+                <button id="play-or-stop" class="btn btn-warning" onclick="playorstop()"><i class="bi bi-play-fill" id="icon"></i></button>
+                <button id="Back" class="btn btn-warning" onclick="Back()"><i class="bi bi-skip-end-fill"></i></button>
+                <button id="before" class="btn btn-warning" onclick="before()"><i class="bi bi-skip-forward-fill"></i></button>
             </div>
         </div>
         <div class="musics">
@@ -32,7 +33,6 @@
 
 
 <!--------------------CDN---------------------->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
