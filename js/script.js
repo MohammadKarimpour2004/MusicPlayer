@@ -1,7 +1,7 @@
 new Vue({
 	el:'#app',
-	data() {
-			name:'mohammad'
+	data:{
+			musicName:'awat'
 		
 	},
 })
