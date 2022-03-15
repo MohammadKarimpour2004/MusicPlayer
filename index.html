@@ -10,28 +10,30 @@
     <title>MusicPlayer</title>
 </head>
 <body>
-
     <div id="app">
-        <audio src="./music/audio_2017-05-06_12-54-44.ogg"  class="audio"></audio>
+        <!--audioFile-->
+        <audio src="./music/music_1.ogg"  class="audio"></audio>
+        <!--imageANDname-->
         <div class="player">
             <div class="name-img">
-                <h1 >awat</h1>
-                <img id="img" src="./images/Screenshot (46).png" class="title" alt="title" width="200" height="200">
+                <h1>awat_1</h1>
+                <img id="img" src="images/img_1.png" class="title" alt="title" width="200" height="200">
             </div>
+            <!--range-->
+            <div class="range">
+                <input type="range" min="0" max="100" value="0" onchange='change()'>
+            </div>
+            <!--controls-->
             <div class="control">
-                <button id="after" class="btn btn-warning" onclick="after()"><i class="bi bi-skip-backward-fill"></i></button>
-                <button id="Front" class="btn btn-warning" onclick="Front()"><i class="bi bi-skip-start-fill"></i></button>
-                <button id="play-or-stop" class="btn btn-warning" onclick="playorstop()"><i class="bi bi-play-fill" id="icon"></i></button>
-                <button id="Back" class="btn btn-warning" onclick="Back()"><i class="bi bi-skip-end-fill"></i></button>
-                <button id="before" class="btn btn-warning" onclick="before()"><i class="bi bi-skip-forward-fill"></i></button>
+                <button id="after" class="btn btn-primary" onclick="after()"><i class="bi bi-skip-backward-fill"></i></button>
+                <button id="Front" class="btn btn-primary" onclick="Front()"><i class="bi bi-skip-start-fill"></i></button>
+                <button id="play-or-stop" class="btn btn-primary" onclick="playorstop()"><i class="bi bi-play-fill" id="icon"></i></button>
+                <button id="Back" class="btn btn-primary" onclick="Back()"><i class="bi bi-skip-end-fill"></i></button>
+                <button id="before" class="btn btn-primary" onclick="before()"><i class="bi bi-skip-forward-fill"></i></button>
             </div>
         </div>
-        <div class="musics">
-            
-        </div>
+        
     </div>
-
-
 <!--------------------CDN---------------------->
     <script src="./js/script.js"></script>
 </body>
